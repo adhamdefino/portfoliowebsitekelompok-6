@@ -1,132 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Portofolio Kelompok 6</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Custom Google font-->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
-        <!-- Bootstrap icons-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body class="d-flex flex-column h-100 bg-light">
-        <main class="flex-shrink-0">
-            <!-- Navigation-->
-            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
-                <div class="container px-5">
-                    <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">Student Digital Portofolio</span></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
-                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="resume.html">About Us</a></li>
-                            <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-            <!-- Projects Section-->
-            <section class="bg-light py-5">
-                <div class="container px-5 mb-5">
-                    <div class="text-center mb-5">
-                        <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Projects</span></h1> </br></br>
-                    </div>
-                    <div class="row gx-5 justify-content-center">
-                        <div class="col-lg-11 col-xl-9 col-xxl-8">
-                            <!-- Project Card 1-->
-                           <div class="gallery">
-                                <div class="project" onclick="openModal('modal1')">
-                                <img src="assets/MoodMeal.png" alt="Proyek 1" width="600">
-                                </div>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Projects - BitFour" />
+    <title>Projects - BitFour</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+  <body class="d-flex flex-column h-100">
+    <main class="flex-shrink-0">
+      <nav class="navbar navbar-expand-lg site-navbar">
+        <div class="container px-5">
+          <a class="navbar-brand" href="index.html">BitFour</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="resume.html">About Us</a></li>
+              <li class="nav-item"><a class="nav-link active" href="projects.html">Projects</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+            <button
+              id="themeToggle"
+              class="btn btn-sm btn-outline-brand ms-lg-3"
+              type="button"
+              aria-label="Toggle theme"
+              data-theme-toggle
+            >
+              <i class="bi bi-moon"></i>
+            </button>
+          </div>
+        </div>
+      </nav>
 
-                                <div class="project" onclick="openModal('modal2')">
-                                <img src="assets/To do List.png" alt="Proyek 2" width="600">
-                                </div>
+      <header class="page-hero mobile-hide">
+        <div class="hero-orb orb-teal"></div>
+        <div class="container px-5 text-center">
+          <span class="eyebrow">Projects</span>
+          <h1 class="display-5 fw-bold mt-3">Proyek Kolaborasi Open Source</h1>
+          <p class="lead">
+            Kumpulan karya yang kami bangun secara kolaboratif, mulai dari aplikasi produktivitas hingga eksplorasi UX.
+          </p>
+        </div>
+      </header>
 
-                                <div class="project" onclick="openModal('modal3')">
-                                <img src="assets/Porto.png" alt="Proyek 3" width="600">
-                                </div>
-                            </div>
-
-                            <!-- Modal 1 -->
-                            <div id="modal1" class="modal">
-                                <div class="modal-content">
-                                <span class="close" onclick="closeModal('modal1')">&times;</span>
-                                <img src="assets/MoodMeal.png" alt="Proyek 1">
-                                <h2>MoodMeal Recommender</h2>
-                                <p>Mood Meal Recommender adalah sebuah platform web inovatif yang 
-                                    dirancang untuk memberikan rekomendasi makanan berdasarkan suasana hati 
-                                    pengguna sebagai bentuk layanan kuliner digital yang lebih personal dan relevan. 
-                                    Platform ini hadir untuk menjawab permasalahan umum masyarakat modern yang 
-                                    sering kebingungan memilih makanan yang sesuai dengan mood, preferensi rasa, 
-                                    kondisi emosional, serta kebutuhan harian mereka.</p>
-                                    <a href="https://wulandari2712.github.io/mood-meal-recommender/">Read Project</a>
-                                </div>
-                            </div>
-
-                            <!-- Modal 2 -->
-                            <div id="modal2" class="modal">
-                                <div class="modal-content">
-                                <span class="close" onclick="closeModal('modal2')">&times;</span>
-                                <img src="assets/To do List.png" alt="Proyek 2">
-                                <h2>Aplikasi To-Do List</h2>
-                                <p>Projek saya adalah aplikasi To-do List yang dibuat menggunakan bahasa pemrograman Java dengan Apache NetBeans. Aplikasi ini berfungsi untuk membantu pengguna mencatat dan mengelola daftar tugas agar lebih teratur.
-                                    Dari pengerjaan projek ini, saya mendapatkan pengalaman dalam membuat aplikasi sederhana serta memahami proses pengembangan aplikasi dari awal hingga selesai.</p>
-                                    <a href="https://github.com/adhamdefino/to-do-list.git">Read Project</a>
-                                </div>
-                            </div>
-
-                            <!-- Modal 3 -->
-                            <div id="modal3" class="modal">
-                                <div class="modal-content">
-                                <span class="close" onclick="closeModal('modal3')">&times;</span>
-                                <img src="assets/Porto.png" alt="Proyek 3">
-                                <h2>Portofolio</h2>
-                                <p>Mahasiswa Program Studi Sistem Informasi di Universitas Adzkia yang memiliki kemampuan akademik dan interpersonal yang baik, serta aktif dalam organisasi kemahasiswaan. Terorganisir, dapat diandalkan, dan mampu mengelola prioritas dengan sikap positif.</p>
-                                <a href="https://wulandari2712.github.io/wulandari.github.io/">Read Project</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- Call to action section-->
-            <section class="py-5 bg-gradient-primary-to-secondary text-white">
-                <div class="container px-5 my-5">
-                    <div class="text-center">
-                        <h2 class="display-4 fw-bolder mb-4">Let's build something together</h2>
-                        <a class="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder" href="contact.html">Contact me</a>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <!-- Footer-->
-        <footer class="bg-white py-4 mt-auto">
-            <div class="container px-5">
-                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                    <div class="col-auto"><div class="small m-0">Copyright &copy; Portofolio Kelompok 6 tahun 2025</div></div>
-                    <div class="col-auto">
-                        <a class="small" href="#!">Privacy</a>
-                        <span class="mx-1">&middot;</span>
-                        <a class="small" href="#!">Terms</a>
-                        <span class="mx-1">&middot;</span>
-                        <a class="small" href="#!">Contact</a>
-                    </div>
-                </div>
+      <section class="section-block app-screen">
+        <div class="container px-5">
+          <div class="section-heading text-center mb-4 d-md-none">
+            <span class="eyebrow">Projects</span>
+            <h2 class="h4 fw-bold mt-2">Proyek Open Source</h2>
+          </div>
+          <div class="project-grid">
+            <div class="project-card" data-modal-target="modal1" role="button" tabindex="0">
+              <img src="assets/MoodMeal.png" alt="MoodMeal Recommender" />
+              <div class="project-overlay">
+                <span class="project-tag">Web App</span>
+                <h3 class="h5 fw-bold">MoodMeal Recommender</h3>
+                <p class="small mb-1">Rekomendasi makanan berbasis suasana hati.</p>
+                <span class="project-link">View Details</span>
+              </div>
             </div>
-        </footer>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-    </body>
+
+            <div class="project-card" data-modal-target="modal2" role="button" tabindex="0">
+              <img src="assets/To do List.png" alt="Aplikasi To-Do List" />
+              <div class="project-overlay">
+                <span class="project-tag">Desktop App</span>
+                <h3 class="h5 fw-bold">Aplikasi To-Do List</h3>
+                <p class="small mb-1">Manajemen tugas sederhana berbasis Java.</p>
+                <span class="project-link">View Details</span>
+              </div>
+            </div>
+
+            <div class="project-card" data-modal-target="modal3" role="button" tabindex="0">
+              <img src="assets/Porto.png" alt="Portfolio Personal" />
+              <div class="project-overlay">
+                <span class="project-tag">Portfolio</span>
+                <h3 class="h5 fw-bold">Personal Portfolio</h3>
+                <p class="small mb-1">Eksplorasi desain portofolio digital.</p>
+                <span class="project-link">View Details</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-block section-muted mobile-hide">
+        <div class="container px-5">
+          <div class="cta-banner">
+            <div>
+              <span class="eyebrow">Next Collaboration</span>
+              <h2 class="fw-bold mb-2">Punya ide proyek selanjutnya?</h2>
+              <p class="text-muted mb-0">Kami siap membantu mewujudkan ide digital dengan pendekatan open source.</p>
+            </div>
+            <a class="btn btn-primary btn-lg" href="contact.html">Mulai Diskusi</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer mt-auto">
+      <div class="container px-5">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-auto small">Copyright &copy; BitFour 2025</div>
+          <div class="col-auto small">
+            <a href="index.html">Home</a>
+            <span class="mx-2">|</span>
+            <a href="resume.html">About</a>
+            <span class="mx-2">|</span>
+            <a href="projects.html">Projects</a>
+            <span class="mx-2">|</span>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div id="modal1" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal1-title">
+      <div class="modal-content">
+        <button class="modal-close" type="button" aria-label="Close" onclick="closeModal('modal1')">&times;</button>
+        <img src="assets/MoodMeal.png" alt="MoodMeal Recommender" />
+        <h2 id="modal1-title" class="h4 fw-bold">MoodMeal Recommender</h2>
+        <p class="text-muted">
+          Mood Meal Recommender adalah platform web inovatif yang memberikan rekomendasi makanan berdasarkan suasana hati
+          pengguna untuk pengalaman kuliner yang lebih personal dan relevan.
+        </p>
+        <a class="btn btn-outline-brand" href="https://wulandari2712.github.io/mood-meal-recommender/">Read Project</a>
+      </div>
+    </div>
+
+    <div id="modal2" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal2-title">
+      <div class="modal-content">
+        <button class="modal-close" type="button" aria-label="Close" onclick="closeModal('modal2')">&times;</button>
+        <img src="assets/To do List.png" alt="Aplikasi To-Do List" />
+        <h2 id="modal2-title" class="h4 fw-bold">Aplikasi To-Do List</h2>
+        <p class="text-muted">
+          Aplikasi To-Do List dibuat dengan Java di Apache NetBeans untuk membantu pengguna mencatat dan mengelola tugas
+          harian secara terstruktur dan efisien.
+        </p>
+        <a class="btn btn-outline-brand" href="https://github.com/adhamdefino/to-do-list.git">Read Project</a>
+      </div>
+    </div>
+
+    <div id="modal3" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal3-title">
+      <div class="modal-content">
+        <button class="modal-close" type="button" aria-label="Close" onclick="closeModal('modal3')">&times;</button>
+        <img src="assets/Porto.png" alt="Portfolio Personal" />
+        <h2 id="modal3-title" class="h4 fw-bold">Personal Portfolio</h2>
+        <p class="text-muted">
+          Eksplorasi portofolio personal dengan fokus pada storytelling visual, tata letak bersih, dan navigasi yang mudah.
+        </p>
+        <a class="btn btn-outline-brand" href="https://wulandari2712.github.io/wulandari.github.io/">Read Project</a>
+      </div>
+    </div>
+
+    <nav class="mobile-nav" aria-label="Primary">
+      <a class="mobile-nav__item" href="index.html" aria-label="Home">
+        <i class="bi bi-house"></i>
+        <span>Home</span>
+      </a>
+      <a class="mobile-nav__item" href="resume.html" aria-label="About">
+        <i class="bi bi-people"></i>
+        <span>About</span>
+      </a>
+      <button class="mobile-nav__item mobile-nav__toggle" type="button" aria-label="Toggle theme" data-theme-toggle>
+        <i class="bi bi-moon"></i>
+        <span>Theme</span>
+      </button>
+      <a class="mobile-nav__item active" href="projects.html" aria-label="Projects">
+        <i class="bi bi-grid"></i>
+        <span>Projects</span>
+      </a>
+      <a class="mobile-nav__item" href="contact.html" aria-label="Contact">
+        <i class="bi bi-envelope"></i>
+        <span>Contact</span>
+      </a>
+    </nav>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
 </html>
