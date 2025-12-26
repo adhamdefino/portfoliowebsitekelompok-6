@@ -12090,22 +12090,4 @@ body.dark-mode a {
   display: none !important;
 }
 
-/* PAKSA MATI DI SEMUA UKURAN LAYAR */
-@media (max-width: 1200px),
-       (max-width: 992px),
-       (max-width: 768px),
-       (max-width: 576px) {
-  .dots-1,
-  .dots-2,
-  .dots-3,
-  .dots-4 {
-    display: none !important;
-    opacity: 0 !important;
-    visibility: hidden !important;
-  }
-}
-[class^="dots-"],
-[class*=" dots-"] {
-  display: none !important;
-}
 
