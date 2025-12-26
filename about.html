@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>About Us - Kelompok 6</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- CSS UTAMA -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background: radial-gradient(circle at top left, #dfe7ff, transparent 40%),
+                        radial-gradient(circle at bottom right, #ffd6e8, transparent 40%),
+                        #ffffff;
+        }
+
+        .resume-wrapper {
+            max-width: 1100px;
+            margin: auto;
+            padding: 80px 20px;
+        }
+
+        .resume-title {
+            text-align: center;
+            margin-bottom: 100px;
+        }
+
+        .resume-title h1 {
+            font-size: 3rem;
+            font-weight: 800;
+        }
+
+        .resume-title h1 span {
+            background: linear-gradient(80deg, #4f46e5, #ec4899);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .resume-title p {
+            color: #6b7280;
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+
+        .about {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            margin-bottom: 90px;
+        }
+
+        .about.reverse {
+            flex-direction: row-reverse;
+        }
+
+        .about-image img {
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+
+        .about-text h2 {
+            font-size: 2.2rem;
+            font-weight: 800;
+            margin-bottom: 16px;
+        }
+
+        .about-text h2 span {
+            background: linear-gradient(90deg, #4f46e5, #ec4899);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .about-text p {
+            color: #6b7280;
+            line-height: 1.8;
+            margin-bottom: 12px;
+        }
+
+        .about-text .intro {
+            font-weight: 500;
+            color: #374151;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            color: #6b7280;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .about,
+            .about.reverse {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- ORB BACKGROUND -->
+<div class="hero-orb orb-blue"></div>
+<div class="hero-orb orb-pink"></div>
+<div class="hero-orb orb-cyan"></div>
+
+<div class="resume-wrapper">
+
+    <div class="resume-title">
+        <h1><span>About Us</span></h1>
+        <p>Mahasiswa Program Studi Sistem Informasi</p>
+    </div>
+
+    <!-- PERSON 1 -->
+    <section class="about">
+        <div class="about-image">
+            <img src="assets/wulan.jpeg" alt="Wulandari" width="180">
+        </div>
+        <div class="about-text">
+            <h2>I’m <span>Wulandari</span></h2>
+            <p class="intro">
+                Mahasiswa Program Studi Sistem Informasi Universitas Adzkia.
+            </p>
+            <p>
+                Berpengalaman dalam pembuatan website statis dan dinamis menggunakan HTML, CSS, dan JavaScript.
+            </p>
+        </div>
+    </section>
+
+    <!-- PERSON 2 -->
+    <section class="about reverse">
+        <div class="about-image">
+            <img src="assets/adham.jpeg" alt="Adham Defino" width="180">
+        </div>
+        <div class="about-text">
+            <h2>I’m <span>Adham Defino</span></h2>
+            <p class="intro">
+                Mahasiswa Sistem Informasi Universitas Adzkia.
+            </p>
+            <p>
+                Tertarik pada wireframing, prototyping, dan UI/UX design.
+            </p>
+        </div>
+    </section>
+
+    <!-- PERSON 3 -->
+    <section class="about">
+        <div class="about-image">
+            <img src="assets/kila.jpeg" alt="Khailana" width="180">
+        </div>
+        <div class="about-text">
+            <h2>I’m <span>Khailana Wetrira Brani</span></h2>
+            <p class="intro">
+                Mahasiswa Sistem Informasi Universitas Adzkia yang aktif organisasi.
+            </p>
+            <p>
+                Terbiasa menggunakan HTML, CSS, JavaScript, dan framework frontend dasar.
+            </p>
+        </div>
+    </section>
+
+    <!-- PERSON 4 -->
+    <section class="about reverse">
+        <div class="about-image">
+            <img src="assets/sulthan.jpeg" alt="Sulthan Ananda Putra" width="180">
+        </div>
+        <div class="about-text">
+            <h2>I’m <span>Sulthan Ananda Putra</span></h2>
+            <p class="intro">
+                Mahasiswa Sistem Informasi yang tertarik pada pengembangan website dan UI/UX.
+            </p>
+            <p>
+                Aktif dalam kerja tim dan pengembangan proyek berbasis web.
+            </p>
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    <p>© 2025 Our Team Portfolio</p>
+</footer>
+
+</body>
+</html>
