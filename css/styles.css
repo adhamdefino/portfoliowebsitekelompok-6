@@ -11907,7 +11907,7 @@ body.dark-mode .hero-section::before {
 /* Galeri proyek */
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   gap: 20px;
 }
 
@@ -11948,7 +11948,7 @@ body.dark-mode .hero-section::before {
   background: #fff;
   padding: 20px;
   border-radius: 10px;
-  max-width: 1000px;
+  max-width: 500px;
   width: 90%;
   text-align: center;
   position: relative;
@@ -11973,112 +11973,4 @@ body.dark-mode .hero-section::before {
   color: red;
 }
 
-}
-/* ===== GLOBAL DARK MODE (SEMUA HALAMAN) ===== */
-body.dark-mode {
-  background-color: #020617;
-  color: #e5e7eb;
-}
-
-/* TEXT */
-body.dark-mode h1,
-body.dark-mode h2,
-body.dark-mode h3,
-body.dark-mode h4,
-body.dark-mode h5,
-body.dark-mode p,
-body.dark-mode span {
-  color: #e5e7eb;
-}
-
-/* SECTION BACKGROUND */
-body.dark-mode section,
-body.dark-mode header {
-  background-color: #020617;
-}
-
-/* CARD */
-body.dark-mode .card,
-body.dark-mode .modal-content {
-  background-color: #020617;
-  color: #e5e7eb;
-  border: 1px solid #1e293b;
-}
-
-/* FORM */
-body.dark-mode input,
-body.dark-mode textarea {
-  background-color: #020617;
-  color: #e5e7eb;
-  border: 1px solid #334155;
-}
-
-/* PLACEHOLDER */
-body.dark-mode input::placeholder,
-body.dark-mode textarea::placeholder {
-  color: #94a3b8;
-}
-
-/* FOOTER */
-body.dark-mode footer {
-  background-color: #020617;
-  color: #e5e7eb;
-}
-
-/* LINK */
-body.dark-mode a {
-  color: #93c5fd;
-}
-/* ===== FORCE DARK MODE OVERRIDE BOOTSTRAP ===== */
-body.dark-mode .bg-light,
-body.dark-mode .bg-white {
-  background-color: #020617 !important;
-}
-
-body.dark-mode .navbar.bg-white {
-  background-color: #020617 !important;
-}
-
-body.dark-mode .card {
-  background-color: #020617 !important;
-  color: #e5e7eb;
-  border: 1px solid #1e293b;
-}
-
-body.dark-mode footer.bg-white {
-  background-color: #020617 !important;
-}
-/* ===== ABSOLUTE DARK MODE FIX ===== */
-body.dark-mode {
-  background-color: #020617 !important;
-  color: #e5e7eb !important;
-}
-
-body.dark-mode * {
-  background-color: transparent;
-}
-
-body.dark-mode section,
-body.dark-mode header,
-body.dark-mode footer,
-body.dark-mode nav {
-  background-color: #020617 !important;
-}
-
-body.dark-mode .card,
-body.dark-mode .modal-content {
-  background-color: #020617 !important;
-  color: #e5e7eb !important;
-  border: 1px solid #1e293b;
-}
-
-body.dark-mode input,
-body.dark-mode textarea {
-  background-color: #020617 !important;
-  color: #e5e7eb !important;
-  border: 1px solid #334155;
-}
-
-body.dark-mode a {
-  color: #93c5fd !important;
 }
