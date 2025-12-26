@@ -11907,7 +11907,7 @@ body.dark-mode .hero-section::before {
 /* Galeri proyek */
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
 }
 
@@ -11926,6 +11926,7 @@ body.dark-mode .hero-section::before {
 
 .project img {
   width: 100%;
+  height: 200px;
   display: block;
   border-radius: 10px;
 }
