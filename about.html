@@ -106,7 +106,30 @@
     </style>
 </head>
 
-<body>
+<body class="d-flex flex-column h-100">
+<main class="flex-shrink-0">
+   <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm">
+    <div class="container px-5">
+        <a class="navbar-brand fw-bolder text-primary" href="index.html">
+            Portfolio Kelompok 6
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About us</a></li>
+                <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>    
+                <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+            </ul>
+            <button id="themeToggle" class="btn btn-sm ms-3">🌙</button>
+        </div>
+    </div>
+</nav>  
 
 <!-- ORB BACKGROUND -->
 <div class="hero-orb orb-blue"></div>
@@ -271,6 +294,7 @@
 <footer>
     <p>© 2025 Our Team Portfolio</p>
 </footer>
+<script src="js/scripts.js"></script>
 
 </body>
 </html>
