@@ -12083,3 +12083,33 @@ body.dark-mode textarea {
 body.dark-mode a {
   color: #93c5fd !important;
 }
+/* =====================
+   DARK MODE – ARTICLE
+===================== */
+
+body.dark-mode {
+  background-color: #0b0f19;
+  color: #e5e7eb;
+}
+
+body.dark-mode .navbar {
+  background-color: #0f172a !important;
+}
+
+body.dark-mode .article-header {
+  background-color: #020617;
+}
+
+body.dark-mode .text-muted {
+  color: #9ca3af !important;
+}
+
+body.dark-mode footer {
+  background-color: #020617;
+  color: #9ca3af;
+}
+
+body.dark-mode .btn-outline-primary {
+  color: #93c5fd;
+  border-color: #93c5fd;
+}
