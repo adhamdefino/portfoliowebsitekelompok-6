@@ -11731,32 +11731,6 @@ html {
     width: 1.5vw;
     left: -2vw;
   }
-
-  @media (max-width: 768px) {
-
-  section,
-  .about,
-  .about-content {
-    position: static !important;
-    height: auto !important;
-  }
-
-  .about-content {
-    display: flex;
-    flex-direction: column;
-  }
-
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  .about-text {
-    transform: none !important;
-    text-align: center;
-  }
-}
-
 .dots-1,
 .dots-2,
 .dots-3,
@@ -11980,12 +11954,6 @@ body.dark-mode .hero-section::before {
   position: relative;
 }
 
-.modal-content{
-  height: auto;
-  max-height: 90vh;
-  overflow: auto;
-
-}
 .modal-content img {
   width: 100%;
   border-radius: 10px;
@@ -12004,12 +11972,6 @@ body.dark-mode .hero-section::before {
 .close:hover {
   color: red;
 }
-
-.about-content {
-  display: flex;
-  gap: 20px;
-}
-
 
 
 }
