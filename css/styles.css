@@ -11731,6 +11731,32 @@ html {
     width: 1.5vw;
     left: -2vw;
   }
+
+  @media (max-width: 768px) {
+
+  section,
+  .about,
+  .about-content {
+    position: static !important;
+    height: auto !important;
+  }
+
+  .about-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .about-text {
+    transform: none !important;
+    text-align: center;
+  }
+}
+
 .dots-1,
 .dots-2,
 .dots-3,
@@ -11984,21 +12010,6 @@ body.dark-mode .hero-section::before {
   gap: 20px;
 }
 
-@media (max-width: 768px) {
-  .about-content {
-    flex-direction: column;
-  }
-
-  .about img {
-    width: 100%;
-    height: auto;
-  }
-
-  .about-text {
-    position: static;
-    text-align: center;
-  }
-}
 
 
 }
