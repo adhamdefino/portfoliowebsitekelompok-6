@@ -11954,12 +11954,6 @@ body.dark-mode .hero-section::before {
   position: relative;
 }
 
-.modal-content{
-  height: auto;
-  max-height: 90vh;
-  overflow: auto;
-
-}
 .modal-content img {
   width: 100%;
   border-radius: 10px;
@@ -11977,27 +11971,6 @@ body.dark-mode .hero-section::before {
 
 .close:hover {
   color: red;
-}
-
-.about-content {
-  display: flex;
-  gap: 20px;
-}
-
-@media (max-width: 768px) {
-  .about-content {
-    flex-direction: column;
-  }
-
-  .about img {
-    width: 100%;
-    height: auto;
-  }
-
-  .about-text {
-    position: static;
-    text-align: center;
-  }
 }
 
 
@@ -12178,5 +12151,37 @@ body.dark-mode .btn-outline-primary {
   .blog-filter {
     justify-content: flex-start;
     flex-wrap: nowrap;
+  }
+}
+
+.background-orbs {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .hero-orb {
+    width: 260px;
+    height: 260px;
+    filter: blur(90px);
+    opacity: 0.7;
+  }
+
+  .orb-blue {
+    top: -80px;
+    left: -80px;
+  }
+
+  .orb-pink {
+    top: 40%;
+    right: -120px;
+  }
+
+  .orb-cyan {
+    bottom: -120px;
+    left: 20%;
   }
 }
