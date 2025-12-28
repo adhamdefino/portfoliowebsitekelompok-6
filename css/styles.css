@@ -11979,6 +11979,27 @@ body.dark-mode .hero-section::before {
   color: red;
 }
 
+.about-content {
+  display: flex;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+  }
+
+  .about img {
+    width: 100%;
+    height: auto;
+  }
+
+  .about-text {
+    position: static;
+    text-align: center;
+  }
+}
+
 
 }
 /* ===== GLOBAL DARK MODE (SEMUA HALAMAN) ===== */
