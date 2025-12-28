@@ -12153,3 +12153,9 @@ body.dark-mode .btn-outline-primary {
     flex-wrap: nowrap;
   }
 }
+
+.brand-logo {
+  height: 36px;  
+  width: auto;
+  object-fit: contain;
+}
