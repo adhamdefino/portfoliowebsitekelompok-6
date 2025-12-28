@@ -11954,6 +11954,12 @@ body.dark-mode .hero-section::before {
   position: relative;
 }
 
+.modal-content{
+  height: auto;
+  max-height: 90vh;
+  overflow: auto;
+
+}
 .modal-content img {
   width: 100%;
   border-radius: 10px;
@@ -11971,6 +11977,27 @@ body.dark-mode .hero-section::before {
 
 .close:hover {
   color: red;
+}
+
+.about-content {
+  display: flex;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+  }
+
+  .about img {
+    width: 100%;
+    height: auto;
+  }
+
+  .about-text {
+    position: static;
+    text-align: center;
+  }
 }
 
 
