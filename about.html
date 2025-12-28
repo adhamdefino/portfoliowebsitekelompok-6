@@ -147,10 +147,32 @@
         <p>Tim mahasiswa yang membangun solusi digital terbuka melalui kolaborasi dan semangat belajar bersama.</p>
     </div>
 
+      <!-- Project Card 1-->
+                           <div class="gallery">
+                                <div class="project" onclick="openModal('modal1')">
+                                <img src="assets/wulan.jpeg" alt="Profile 1" width="250" >
+                                </div>
+
+                                <div class="project" onclick="openModal('modal2')">
+                                <img src="assets/adham.jpeg" alt="Profile  2" width="200">
+                                </div>
+
+                                <div class="project" onclick="openModal('modal3')">
+                                <img src="assets/kila.jpeg" alt="Profile 3" width="250">
+                                </div>
+
+                                 <div class="project" onclick="openModal('modal4')">
+                                <img src="assets/sulthan.jpeg" alt="Profile 4" width="250">
+                                </div>
+                            </div>
+
     <!-- PERSON 1 -->
     <section class="about">
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
         <div class="about-image">
-            <img src="assets/wulan.jpeg" alt="Wulandari" width="180">
+            <img src="assets/wulan.jpeg" alt="Wulandari" width="180"> <br> <br>
         </div>
         <div class="about-text">
             <h2> Hello I’m <span>Wulandari</span></h2>
@@ -184,8 +206,11 @@
 
     <!-- PERSON 2 -->
     <section class="about reverse">
+         <div id="modal2" class="modal">
+            <div class="modal-content">
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
         <div class="about-image">
-            <img src="assets/adham.jpeg" alt="Adham Defino" width="180">
+            <img src="assets/adham.jpeg" alt="Adham Defino" width="180"> <br><br>
         </div>
         <div class="about-text">
             <h2>Hello I’m <span>Adham Defino</span></h2>
@@ -220,6 +245,9 @@
 
     <!-- PERSON 3 -->
     <section class="about">
+        <div id="modal3" class="modal">
+            <div class="modal-content">
+            <span class="close" onclick="closeModal('modal3')">&times;</span>
         <div class="about-image">
             <img src="assets/kila.jpeg" alt="Khailana" width="180">
         </div>
@@ -258,6 +286,9 @@
 
     <!-- PERSON 4 -->
     <section class="about reverse">
+        <div id="modal4" class="modal">
+            <div class="modal-content">
+            <span class="close" onclick="closeModal('modal4')">&times;</span>
         <div class="about-image">
             <img src="assets/sulthan.jpeg" alt="Sulthan Ananda Putra" width="180">
         </div>
