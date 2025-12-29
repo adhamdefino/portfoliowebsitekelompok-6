@@ -210,70 +210,94 @@
     text-align: center;
     font-weight: 600;
 }
-/* BACKDROP FADE */
-.modal.fade .modal-dialog {
-    transform: translateY(-40px) scale(.95);
-    transition: all .35s ease;
+/* ============================= */
+/* MODAL FINAL - STABLE SCROLL   */
+/* ============================= */
+
+.modal {
+    overflow: hidden;
 }
 
-.modal.show .modal-dialog {
-    transform: translateY(0) scale(1);
+/* ukuran modal */
+.modal-dialog {
+    height: 90vh;
+    margin: auto;
 }
 
-/* HEADER PHOTO ANIMATION */
-.modal-hero img {
-    animation: zoomIn .5s ease;
+/* struktur modal */
+.modal-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    overflow: hidden;
 }
 
-@keyframes zoomIn {
-    from {
-        transform: scale(.8);
-        opacity: 0;
-    }
-    to {
-        transform: scale(1);
-        opacity: 1;
-    }
+/* header */
+.modal-header {
+    border-bottom: none;
+    flex-shrink: 0;
+    padding: 20px 25px;
 }
 
-/* CONTENT STAGGER */
+/* body SCROLL DI SINI */
+.modal-body {
+    flex: 1;
+    overflow-y: auto;
+    padding: 25px 30px;
+    font-size: 15px;
+    color: #374151;
+}
+
+/* footer (kalau dipakai) */
+.modal-footer {
+    flex-shrink: 0;
+}
+
+/* scrollbar cantik */
+.modal-body::-webkit-scrollbar {
+    width: 6px;
+}
+
+.modal-body::-webkit-scrollbar-thumb {
+    background: #c7c7c7;
+    border-radius: 10px;
+}
+
+/* ============================= */
+/* ANIMASI AMAN (NO TRANSFORM)  */
+/* ============================= */
+
 .modal-body > * {
     opacity: 0;
-    transform: translateY(15px);
-    animation: fadeUp .4s ease forwards;
+    animation: fadeIn .35s ease forwards;
 }
 
-.modal-body > *:nth-child(1) { animation-delay: .1s }
-.modal-body > *:nth-child(2) { animation-delay: .2s }
-.modal-body > *:nth-child(3) { animation-delay: .3s }
-.modal-body > *:nth-child(4) { animation-delay: .4s }
-.modal-body > *:nth-child(5) { animation-delay: .5s }
+.modal-body > *:nth-child(1) { animation-delay: .05s }
+.modal-body > *:nth-child(2) { animation-delay: .1s }
+.modal-body > *:nth-child(3) { animation-delay: .15s }
+.modal-body > *:nth-child(4) { animation-delay: .2s }
+.modal-body > *:nth-child(5) { animation-delay: .25s }
 
-@keyframes fadeUp {
-    to {
-        opacity: 1;
-        transform: translateY(0);
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* ============================= */
+/* RESPONSIVE MOBILE            */
+/* ============================= */
+
+@media (max-width: 768px) {
+    .modal-dialog {
+        height: 100vh;
+        margin: 0;
+    }
+
+    .modal-content {
+        border-radius: 0;
     }
 }
-.modal-dialog {
-    max-height: 90vh;
-}
-
-.modal-content {
-    max-height: 90vh;
-    overflow: hidden; /* biar body yang scroll */
-}
-
-.modal-body {
-    overflow-y: auto;
-    max-height: calc(90vh - 120px); /* dikurangi header */
-    padding-right: 10px;
-}
-.modal-header {
-    flex-direction: column;
-    align-items: flex-start;
-}
-
 
 
     </style>
@@ -375,54 +399,70 @@
 </section>
 
     
-   <div class="modal fade" id="wulanModal" tabindex="-1">
+  <div class="modal fade" id="wulanModal" tabindex="-1">
 <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
 <div class="modal-content">
 
 <div class="modal-header">
-<div class="modal-hero w-100">
-    <h5>Wulandari</h5>
-    <p>Mahasiswa Sistem Informasi</p>
-    <button class="btn-close btn-close-white position-absolute top-0 end-0 m-3"
-        data-bs-dismiss="modal"></button>
-</div>
+<h5 class="modal-title">Biodata wulandari</h5>
+<button class="btn-close" data-bs-dismiss="modal"></button>
 </div>
 
-<div class="modal-body">
 
-<div class="bio-highlight">
-<p><strong>Asal:</strong> Pasaman Barat</p>
-<p><strong>Jurusan:</strong> Sistem Informasi</p>
-</div>
 
-<div class="bio-section">
-<h6><i class="bi bi-mortarboard-fill"></i> Pendidikan</h6>
-<ul>
-<li>SDN 04 Sungai Beremas</li>
-<li>SMPN 1 Sungai Beremas</li>
-<li>SMAN 1 Sungai Beremas</li>
-<li>Universitas Adzkia</li>
-</ul>
-</div>
+      <!-- BODY -->
+      <div class="modal-body">
 
-<div class="bio-section">
-<h6><i class="bi bi-briefcase-fill"></i> Pengalaman</h6>
-<p>Magang administrasi perkantoran di Kantor Camat Sungai Beremas.</p>
-</div>
+        <!-- BIODATA RINGKAS -->
+        <div class="bio-highlight">
+          <p><strong>Nama:</strong> Wulandari</p>
+          <p><strong>Asal:</strong> Pasaman Barat</p>
+          <p><strong>Jurusan:</strong> Sistem Informasi</p>
+        </div>
 
-<div class="bio-section">
-<h6><i class="bi bi-bullseye"></i> Visi & Misi</h6>
-<p><strong>Visi:</strong> Mandiri dan bermanfaat.</p>
-<p><strong>Misi:</strong> Terus belajar dan bertanggung jawab.</p>
-</div>
+        <!-- PENDIDIKAN -->
+        <div class="bio-section">
+          <h6>
+            <i class="bi bi-mortarboard-fill"></i>
+            Pendidikan
+          </h6>
+          <ul>
+            <li>SDN 04 Sungai Beremas</li>
+            <li>SMPN 1 Sungai Beremas</li>
+            <li>SMAN 1 Sungai Beremas</li>
+            <li>Universitas Adzkia</li>
+          </ul>
+        </div>
 
-<div class="bio-email">
-📧 wulandari00027@gmail.com
-</div>
+        <!-- PENGALAMAN -->
+        <div class="bio-section">
+          <h6>
+            <i class="bi bi-briefcase-fill"></i>
+            Pengalaman
+          </h6>
+          <p>
+            Magang administrasi perkantoran di Kantor Camat Sungai Beremas.
+          </p>
+        </div>
 
-</div>
-</div>
-</div>
+        <!-- VISI & MISI -->
+        <div class="bio-section">
+          <h6>
+            <i class="bi bi-bullseye"></i>
+            Visi &amp; Misi
+          </h6>
+          <p><strong>Visi:</strong> Mandiri dan bermanfaat.</p>
+          <p><strong>Misi:</strong> Terus belajar dan bertanggung jawab.</p>
+        </div>
+
+        <!-- EMAIL -->
+        <div class="bio-email">
+          📧 wulandari00027@gmail.com
+        </div>
+
+      </div>
+    </div>
+  </div>
 </div>
 
 
