@@ -45,30 +45,38 @@ Website ini memiliki beberapa fitur utama sesuai dengan ketentuan tugas, antara 
 - Contact Form dengan validasi client-side, pesan error yang informatif, serta
   success message setelah form berhasil dikirim
 
-Struktur Folder Project
-website-nim/
-├── index.html
-├── pages/
-│   ├── about.html
-│   ├── projects.html
-│   ├── blog.html
-│   └── contact.html
-├── assets/
-│   ├── css/
-│   │   ├── style.css
-│   │   ├── responsive.css
-│   │   └── variables.css
-│   ├── js/
-│   │   ├── main.js
-│   │   ├── navigation.js
-│   │   └── form-validation.js
-│   └── images/
-│       ├── profile/
-│       ├── projects/
-│       └── blog/
-├── .gitignore
-├── README.md
-└── LICENSE
+Struktur Folder Projek
+PORTFOLIOWEBSITEKELOMPOK-6
+│
+├─ assets
+│   ├─ adham.jpeg
+│   ├─ kila.jpeg
+│   ├─ sulthan.jpeg
+│   ├─ wulan.jpeg
+│   ├─ profile.png
+│   ├─ logo bitfour.png
+│   ├─ MoodMeal.png
+│   ├─ Porto.png
+│   ├─ To do List.png
+│   └─ favicon.ico
+│
+├─ css
+│   └─ styles.css
+│
+├─ js
+│   └─ scripts.js
+│
+├─ index.html
+├─ about.html
+├─ projects.html
+├─ blog.html
+├─ artikel1.html
+├─ artikel2.html
+├─ artikel3.html
+├─ contact.html
+├─ README.md
+└─ LICENSE
+
 
 Cara Menjalankan Project
 Project ini dapat dijalankan dengan membuka file index.html melalui browser.
