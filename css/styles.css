@@ -12159,3 +12159,31 @@ body.dark-mode .btn-outline-primary {
   width: auto;
   object-fit: contain;
 }
+/* ===== FIX MODAL TIDAK BISA DI KLIK ===== */
+
+/* pastikan background orb tidak menangkap klik */
+.hero-orb {
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* modal backdrop bootstrap */
+.modal-backdrop {
+    z-index: 1040 !important;
+}
+
+/* modal utama */
+.modal {
+    z-index: 1050 !important;
+    pointer-events: auto;
+}
+
+/* isi modal WAJIB bisa diklik */
+.modal-dialog,
+.modal-content,
+.modal-header,
+.modal-body,
+.modal-footer {
+    pointer-events: auto;
+}
+
